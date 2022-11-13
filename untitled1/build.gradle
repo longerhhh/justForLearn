@@ -1,6 +1,6 @@
 plugins {
     id 'java'
-    id 'org.jetbrains.kotlin.jvm' version '1.7.0'
+    id 'org.jetbrains.kotlin.jvm' version '1.7.10'
 }
 
 group 'org.example'
@@ -31,6 +31,7 @@ compileKotlin {
     kotlinOptions {
         jvmTarget = "1.8"
     }
+    xargs+="-Xcontext-receivers"
 }
 compileTestKotlin {
     kotlinOptions {

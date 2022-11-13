@@ -6,5 +6,6 @@ public class Main {
         new A.C().c();
         new C().i();
         System.out.println("Hello world!");
+        "".compareTo()
     }
 }

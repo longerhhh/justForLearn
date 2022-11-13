@@ -193,18 +193,33 @@ object trace {
 }
 
 fun main() {
-    val s = generateSequence(0) { it+1 }
-    println(s.take(10).toSortedSet())
-    val items = mutableListOf(
-        "first", "second", "third", "XXX", "4th"
-    )
-    println(items)
-    val seq = generateSequence {
-        items.removeAt(0).takeIf { it != "XXX" }
+    tag@ for (i in 0..10) {
+        for (j in 10..20) {
+            if (j == 15) {
+//                return@tag
+            }
+            println('a')
+        }
     }
-    println(seq.toList())
-    println(items)
-    println("4th" != "XXX")
+    listOf(1).forEach tagg@ {
+        println(it)
+        if (it == 2) {
+            return@tagg
+        }
+    }
+
+//    val s = generateSequence(0) { it+1 }
+//    println(s.take(10).toSortedSet())
+//    val items = mutableListOf(
+//        "first", "second", "third", "XXX", "4th"
+//    )
+//    println(items)
+//    val seq = generateSequence {
+//        items.removeAt(0).takeIf { it != "XXX" }
+//    }
+//    println(seq.toList())
+//    println(items)
+//    println("4th" != "XXX")
 //    val m =   mapOf(
 //        1 to 1, 2 to 2, 3 to 3
 //    )
