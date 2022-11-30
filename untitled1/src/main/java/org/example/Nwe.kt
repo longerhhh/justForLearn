@@ -47,5 +47,4 @@ class N : A, F {
 }
 
 fun main() {
-    N().aaaa()
 }

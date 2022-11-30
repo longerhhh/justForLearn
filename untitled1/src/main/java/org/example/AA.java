@@ -4,22 +4,23 @@ import dagger.Component;
 
 import javax.inject.Inject;
 
-public class A {
+public class AA {
     @Inject
-    public A() {}
+    public AA() {}
 
     void a() {
         System.out.println('a');
     }
 
     static class B {
-        @Inject A a;
+        @Inject
+        AA AA;
         public B(){
-            DaggerA_AComponent.create().inject(this);
+            DaggerAA_AComponent.create().inject(this);
             System.out.println("init b");
         }
         void b() {
-            a.a();
+            AA.a();
             System.out.println('b');
         }
     }
@@ -30,7 +31,8 @@ public class A {
     }
 
     static class C extends B {
-        @Inject A ac;
+        @Inject
+        AA ac;
 
         public C(){
             super();
