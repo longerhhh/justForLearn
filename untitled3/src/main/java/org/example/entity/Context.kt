@@ -1,7 +1,6 @@
 package org.example.entity
 
-class Context(val name: String, val description: String) {
-
+class Context(private val name: String, private val description: String) {
     override fun toString(): String {
         return "Context{" +
                 "name='" + name + '\'' +
