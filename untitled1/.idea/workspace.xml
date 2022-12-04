@@ -4,17 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f08c30e4-fbb3-4651-b730-979e583d3ff9" name="变更" comment="变更">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TestDagger.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="f08c30e4-fbb3-4651-b730-979e583d3ff9" name="变更" comment="test dagger">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/example/TestDagger2.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" afterPath="$PROJECT_DIR$/gradlew.bat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/A.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/AA.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/Nwe.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/Nwe.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/TestDagger.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/example/TestDagger.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +27,7 @@
       <list>
         <option value="Class" />
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
@@ -64,14 +58,14 @@
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "dart.analysis.tool.window.visible": "false",
     "last_opened_file_path": "/home/lgr/workspace/GithubProject/koin-annotations/sandbox",
-    "project.structure.last.edited": "项目",
+    "project.structure.last.edited": "模块",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
+    "settings.editor.selected.configurable": "preferences.language.Kotlin",
     "show.migrate.to.gradle.popup": "false"
   }
 }]]></component>
-  <component name="RunManager" selected="Kotlin.TestDaggerKt">
+  <component name="RunManager" selected="Kotlin.TestDagger2Kt">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.Main" />
       <module name="untitled1.main" />
@@ -102,6 +96,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="TestDagger2Kt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.example.TestDagger2Kt" />
+      <module name="untitled1.main" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="TestDaggerKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.example.TestDaggerKt" />
       <module name="untitled1.main" />
@@ -110,6 +111,7 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Kotlin.TestDagger2Kt" />
       <item itemvalue="Kotlin.TestDaggerKt" />
       <item itemvalue="Kotlin.ASKt" />
       <item itemvalue="Kotlin.NweKt" />
@@ -117,6 +119,7 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Kotlin.TestDagger2Kt" />
         <item itemvalue="Kotlin.TestDaggerKt" />
         <item itemvalue="Kotlin.NweKt" />
         <item itemvalue="Kotlin.ASKt" />
@@ -132,6 +135,14 @@
       <option name="presentableId" value="Default" />
       <updated>1655552898421</updated>
     </task>
+    <task id="LOCAL-00001" summary="test dagger">
+      <created>1669815580004</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1669815580004</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -149,6 +160,8 @@
     <ignored-roots>
       <path value="$PROJECT_DIR$" />
     </ignored-roots>
+    <MESSAGE value="test dagger" />
+    <option name="LAST_COMMIT_MESSAGE" value="test dagger" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />
