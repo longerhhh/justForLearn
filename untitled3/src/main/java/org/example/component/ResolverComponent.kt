@@ -6,7 +6,8 @@ import org.example.entity.Context
 import org.example.entity.OverlayPlugin
 import org.example.module.ResolverModule
 
-@Component(modules = [ResolverModule::class])
+@Component
+//@Component(modules = [ResolverModule::class])
 interface ResolverComponent {
     @Component.Builder
     interface Builder {

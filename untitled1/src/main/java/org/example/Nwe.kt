@@ -1,5 +1,7 @@
 package org.example
 
+import org.example.a.X
+
 interface A {
     fun a()
 }
@@ -47,4 +49,10 @@ class N : A, F {
 }
 
 fun main() {
+    X().a()
+}
+
+context(String, Main)
+fun AAA(): Unit {
+
 }

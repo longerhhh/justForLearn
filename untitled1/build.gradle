@@ -1,6 +1,6 @@
 
 buildscript {
-    ext.kotlinVersion = '1.7.20'
+    ext.kotlinVersion = '1.8.0'
     dependencies {
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlinVersion"
     }
@@ -8,7 +8,7 @@ buildscript {
 
 plugins {
     id 'java'
-    id 'org.jetbrains.kotlin.jvm' version '1.7.21'
+    id 'org.jetbrains.kotlin.jvm' version '1.8.0'
 }
 apply plugin: 'kotlin-kapt'
 
