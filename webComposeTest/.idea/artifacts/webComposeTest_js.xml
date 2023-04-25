@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="webComposeTest-js">
+    <output-path>$PROJECT_DIR$/build/libs</output-path>
+    <root id="archive" name="webComposeTest-js.jar">
+      <element id="module-output" name="webComposeTest.jsMain" />
+    </root>
+  </artifact>
+</component>
