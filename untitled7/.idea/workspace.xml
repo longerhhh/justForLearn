@@ -1,47 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="1d717854-219d-4d53-9797-e89500c4be02" name="变更" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/KotlinJavaRuntime.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/B.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/C.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/D.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/E.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/F.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/G.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/H.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/I.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/J.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/K.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/L.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/M.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/A.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/B.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/C.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/D.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/E.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/F.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/G.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/H.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/I.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/J.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/K.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/L.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/M.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/N.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/a.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/untitled7.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/N.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/N.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +29,7 @@
     </option>
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="jrt:///home/lgr/.local/share/JetBrains/Toolbox/apps/IDEA-E/ch-0/222.3345.148/jbr!/java.base/java/util/HashMap.class" root0="SKIP_INSPECTION" />
@@ -86,16 +52,17 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.folding&quot;,
-    &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "dart.analysis.tool.window.visible": "false",
+    "last_opened_file_path": "/home/lgr/MyRepoInGithub/IdeaProjects/untitled7",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "show.migrate.to.gradle.popup": "false"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Application.N">
     <configuration name="J" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.J" />
@@ -177,6 +144,11 @@
     </task>
     <servers />
   </component>
+  <component name="VcsManagerConfiguration">
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+  </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
@@ -209,11 +181,6 @@
           <url>file://$PROJECT_DIR$/src/main/kotlin/com/example/M.java</url>
           <line>59</line>
           <option name="timeStamp" value="9" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/com/example/N.java</url>
-          <line>41</line>
-          <option name="timeStamp" value="10" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="kotlin-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/E.kt</url>

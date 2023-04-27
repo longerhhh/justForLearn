@@ -10,7 +10,54 @@ public class N {
         System.out.println(new N().myAtoi("+-42"));
     }
 
+    @SuppressWarnings("restriction")
     public int myAtoi(String s) {
+        char[] chars = s.toCharArray();
+        StringBuilder sb = new StringBuilder();
+        boolean hasFlag = false;
+        for (char c : chars) {
+            if ((!hasFlag) && c == ' ') {
+            } else if (sb.isEmpty() && !hasFlag && c == '-') {
+                hasFlag = true;
+                sb.append(c);
+            } else if (sb.isEmpty() && !hasFlag && c == '+') {
+                hasFlag = true;
+            } else if (c >= '0' && c <= '9') {
+                sb.append(c);
+                if (!hasFlag) {
+                    hasFlag = true;
+                }
+            } else {
+                break;
+            }
+        }
+        if (sb.isEmpty()) {
+            return 0;
+        }
+        s = sb.toString();
+        boolean isNeg = s.charAt(0) == '-';
+        chars = (isNeg ? s.substring(1) : s).toCharArray();
+        int r = 0, t = 0;
+        for (char c : chars) {
+            t = r * 10 + (c - '0') * (isNeg ? -1 : 1);
+            if (t == 0) {
+                // noop
+                // 溢出情况
+            } else if (r > Integer.MAX_VALUE / 10 || r < Integer.MIN_VALUE / 10) {
+                return isNeg ? Integer.MIN_VALUE : Integer.MAX_VALUE;
+                // 结果持续变大或变小代表没有邻近溢出情况
+            } else if (r >= 0 && t > r || r <= 0 && t < r) {
+                r = t;
+            } else if (isNeg) {
+                return Integer.MIN_VALUE;
+            } else {
+                return Integer.MAX_VALUE;
+            }
+        }
+        return r;
+    }
+
+    public int myAtoi1(String s) {
         char[] chars = s.toCharArray();
         StringBuilder sb = new StringBuilder();
         boolean hasFlag = false;
