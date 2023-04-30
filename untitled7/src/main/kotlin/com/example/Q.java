@@ -51,6 +51,14 @@ public class Q {
         }
     }
 
+    /**
+     * 动态规划匹配
+     * 两种情况
+     *
+     * @param s
+     * @param p
+     * @return
+     */
     public boolean isMatch(String s, String p) {
         int sn1 = s.length() + 1, pn1 = p.length() + 1;
         boolean[][] m = new boolean[sn1][pn1];
