@@ -8,5 +8,6 @@ class P {
         } else {
             return s == p
         }
+        return false
     }
 }
