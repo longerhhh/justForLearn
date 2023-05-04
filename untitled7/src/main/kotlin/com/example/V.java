@@ -65,9 +65,71 @@ public class V {
         System.out.println("solution time elapse " + (System.currentTimeMillis() - start) + "ms");
 */
 
+        // [[-4,0,4],[-4,1,3],[-3,-1,4],[-3,0,3],[-3,1,2],[-2,-1,3],[-2,0,2],[-1,-1,2],[-1,0,1]]
+        System.out.println(new V().threeSum(new int[]{-1, 0, 1, 2, -1, -4, -2, -3, 3, 0, 4}));
     }
 
+    /**
+     * 比 @method{threeSum4} 多了剪枝操作，排序了某些特殊情况下一定不可能的情况
+     *
+     * @param nums
+     * @return
+     */
     public List<List<Integer>> threeSum(int[] nums) {
+        List<List<Integer>> result = new ArrayList<>();
+        Arrays.sort(nums);
+        System.out.println(Arrays.toString(nums));
+        int a = nums[0];
+        // 最小的三个数加起来都大于目标值，或者最大的三个数加起来都小于目标值，没有满足的，没必要计算
+        if (nums.length > 2 && (nums[nums.length - 1] + nums[nums.length - 2] + nums[nums.length - 3] >= 0 &&
+                nums[0] + nums[1] + nums[2] <= 0)) {
+            for (int i = 0; i < nums.length - 2; i++) {
+                // 跳过重复数值
+                if (i > 0 && a == nums[i]) {
+                    continue;
+                }
+                // 最小的三个数加起来都大于目标值，则不用循环计算了，一定不满足目标
+                if (nums[i] + nums[i + 1] + nums[i + 2] > 0) {
+                    continue;
+                }
+                a = nums[i];
+                int s = i + 1, e = nums.length - 1;
+                // 当s和e相等退出循环
+                while (s < e) {
+                    int start = nums[s];
+                    int end = nums[e];
+                    int sum = -start - end;
+                    System.out.println("s=" + s + ",e=" + e + ",sum=" + sum + ",start=" + start + ",end=" + end + ", i=" + i);
+                    // 和为-a，添加到列表，移动左指针
+                    if (sum == a) {
+                        List<Integer> l = new ArrayList<>(3);
+                        l.add(a);
+                        l.add(start);
+                        l.add(end);
+                        result.add(l);
+                        while (++s < e && nums[s] == start) ;
+                        // 和大于-a，移动右指针
+                    } else if (sum < a) {
+                        // 使用循环跳过重复数值
+                        while (--e > s && nums[e] == end) ;
+                        // 和小于-a，移动左指针
+                    } else {
+                        // 使用循环跳过重复数值
+                        while (++s < e && nums[s] == start) ;
+                    }
+                }
+            }
+        }
+        return result;
+    }
+
+    /**
+     * 不正确
+     *
+     * @param nums
+     * @return
+     */
+    public List<List<Integer>> threeSum5(int[] nums) {
         List<List<Integer>> result = new ArrayList<>();
         Arrays.sort(nums);
         System.out.println(Arrays.toString(nums));
