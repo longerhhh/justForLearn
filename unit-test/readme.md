@@ -36,3 +36,6 @@ One-time clean up after all tests
 graph LR
     BeforeAll --> BeforeEach --> Test --> AfterEach --> BeforeEach --> Test2 --> AfterEach --> AfterAll
 ```
+
+> notice: method annotated with BeforeAll or AfterAll must be static
+

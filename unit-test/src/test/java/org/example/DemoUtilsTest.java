@@ -1,8 +1,6 @@
 package org.example;
 
-import org.junit.jupiter.api.AfterEach;
-import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.*;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -22,6 +20,17 @@ class DemoUtilsTest {
     void tearDown() {
         System.out.println("DemoUtilsTest.tearDown");
         System.out.println();
+    }
+
+    @BeforeAll
+    static void setupBeforeAllTest() {
+        System.out.println("DemoUtilsTest.setupBeforeAllTest: One-time set up before all tests");
+        System.out.println();
+    }
+
+    @AfterAll
+    static void tearDownAfterAllTest() {
+        System.out.println("DemoUtilsTest.tearDownAfterAllTest: One-time clean up after all tests");
     }
 
     @Test
