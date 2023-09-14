@@ -35,7 +35,7 @@ class DemoUtilsTest {
 
     @Test
     void testAdd() {
-        System.out.println("DemoUtilsTest.testAdd");
+        System.out.println("DemoUtilsTest.testAdd running");
 
         assertEquals(6, demoUtils.add(2,4), "2+4 must be 6");
         assertNotEquals(7, demoUtils.add(2,4), "2+4 must not be 8");
@@ -43,7 +43,7 @@ class DemoUtilsTest {
 
     @Test
     void testCheckNull() {
-        System.out.println("DemoUtilsTest.testCheckNull");
+        System.out.println("DemoUtilsTest.testCheckNull running");
 
         assertNull(demoUtils.checkNull(null), "null must be null");
         assertNotNull(demoUtils.checkNull(5), "5 must not be null");
