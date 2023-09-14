@@ -8,17 +8,25 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class DemoUtilsTest {
 
+    private DemoUtils demoUtils;
+
     @BeforeEach
     void setUp() {
+        // set up
+        demoUtils = new DemoUtils();
+
+        System.out.println("DemoUtilsTest.setUp");
     }
 
     @AfterEach
     void tearDown() {
+        System.out.println("DemoUtilsTest.tearDown");
+        System.out.println();
     }
 
     @Test
     void testAdd() {
-        DemoUtils demoUtils = new DemoUtils();
+        System.out.println("DemoUtilsTest.testAdd");
 
         assertEquals(6, demoUtils.add(2,4), "2+4 must be 6");
         assertNotEquals(7, demoUtils.add(2,4), "2+4 must not be 8");
@@ -26,7 +34,7 @@ class DemoUtilsTest {
 
     @Test
     void testCheckNull() {
-        DemoUtils demoUtils = new DemoUtils();
+        System.out.println("DemoUtilsTest.testCheckNull");
 
         assertNull(demoUtils.checkNull(null), "null must be null");
         assertNotNull(demoUtils.checkNull(5), "5 must not be null");

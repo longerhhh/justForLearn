@@ -10,3 +10,29 @@ Assertions.assertNotEquals(unexpectedValue, actualValueAfterExecutingMethodUnder
 
 assertNull
 AssertNotNull
+
+## lifecycle
+
+@BeforeEach
+set up before each test
+
+@AfterEach
+clean up after each test
+
+```mermaid
+graph LR
+    BeforeEach --> Test --> AfterEach
+```
+
+@BeforeAll
+One-time set up before all tests
+* like get database connections, connect to remote servers
+
+@AfterAll
+One-time clean up after all tests
+* like release database connections, disconnect from remote servers
+
+```mermaid
+graph LR
+    BeforeAll --> BeforeEach --> Test --> AfterEach --> BeforeEach --> Test2 --> AfterEach --> AfterAll
+```
