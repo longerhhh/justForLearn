@@ -55,4 +55,15 @@ class DemoUtilsTest {
         assertNotNull(demoUtils.checkNull(5), "5 must not be null");
         assertNotNull(demoUtils.checkNull(""), "empty string must not be null");
     }
+
+    @Test
+    void testSameOrNot() {
+        String str = "Luv2Code Academy";
+        String s = new String("Luv2Code Academy");
+
+        // strings are in constant pool in java, so same string refer to same reference.
+        assertSame(str, demoUtils.getAcademy(), "academy from demoUtils and custom should refer to same object");
+        // but if you new a String, it will refer to a new reference, not in the constant pool
+        assertNotSame(s, demoUtils.getAcademy(), "academy from demoUtils and new should not refer to same object");
+    }
 }

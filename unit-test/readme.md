@@ -4,12 +4,21 @@
 
 ## Assertions
 
+### assert that items equals or not
+
 Assertions.assertEquals(expectedValue, actualValueAfterExecutingMethodUnderTest, "optional message if test fails")
 
 Assertions.assertNotEquals(unexpectedValue, actualValueAfterExecutingMethodUnderTest, "optional message if test fails")
 
+### assert that items is null or not
+
 assertNull
 AssertNotNull
+
+### assert that items refer to the same object or not, refers to the same object reference
+
+assertSame
+assertNotSame
 
 ## lifecycle
 
