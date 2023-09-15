@@ -39,3 +39,28 @@ graph LR
 
 > notice: method annotated with BeforeAll or AfterAll must be static
 
+## DisplayName
+
+@DisplayName
+Custom display name with spaces, special characters and emojis. 
+Useful for test reports in IDE or external test runner
+and also for sharing reports with project management and non techies.
+
+> note: this annotation will also change the test method name which shown in IDEA left panel. 
+
+JUnit can generate display names for you:
+
+Display name generators
+
+* Simple
+it just simply remove trailing parentheses ( 圆括号 /pəˈrenθəsiːz/ ) from test method name.
+it will also replace underscores, so if a method name has underscores in it, they will be simply replaced with spaces.
+
+* ReplaceUnderscores
+replaces underscores in test method name with spaces.
+
+* IndicativeSentences
+generate sentence base on test class and test method name.
+
+Indicative 指示的，象征的 /ɪnˈdɪkətɪv/
+

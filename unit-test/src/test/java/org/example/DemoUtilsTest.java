@@ -34,6 +34,7 @@ class DemoUtilsTest {
     }
 
     @Test
+    @DisplayName("test if add method in DemoUtils is running correctly. 😊")
     void testAdd() {
         System.out.println("DemoUtilsTest.testAdd running");
 
@@ -42,6 +43,7 @@ class DemoUtilsTest {
     }
 
     @Test
+    @DisplayName("test if check null in DemoUtils is running correctly. 😁")
     void testCheckNull() {
         System.out.println("DemoUtilsTest.testCheckNull running");
 
