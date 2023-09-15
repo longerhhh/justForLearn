@@ -20,6 +20,11 @@ AssertNotNull
 assertSame
 assertNotSame
 
+### assert that condition is true or false
+
+assertTrue
+assertFalse
+
 ## lifecycle
 
 @BeforeEach

@@ -66,4 +66,10 @@ class DemoUtilsTest {
         // but if you new a String, it will refer to a new reference, not in the constant pool
         assertNotSame(s, demoUtils.getAcademy(), "academy from demoUtils and new should not refer to same object");
     }
+
+    @Test
+    void testTrue() {
+        assertTrue(demoUtils.isGreater(2, 1), "2 is bigger than 1");
+        assertFalse(demoUtils.isGreater(1,2), "1 is not bigger than 2");
+    }
 }
