@@ -64,3 +64,13 @@ generate sentence base on test class and test method name.
 
 Indicative 指示的，象征的 /ɪnˈdɪkətɪv/
 
+sample use: just add annotation like this to class
+
+@DisplayNameGeneration(DisplayNameGenerator.Standard.class)
+
+@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
+
+@DisplayNameGeneration(DisplayNameGenerator.IndicativeSentences.class)
+
+@DisplayNameGeneration(DisplayNameGenerator.Simple.class)
+
