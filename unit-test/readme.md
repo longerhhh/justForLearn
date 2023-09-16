@@ -55,6 +55,27 @@ execution exceeded timeout of 2000 ms by 16 ms, 超过预定的2000ms 16ms
 后者在到达指定时间后立即结束，在最终的报告中只体现出操作超时，但不包含实际执行的耗时。
 execution timed out after 2000 ms
 
+### test order 
+
+@TestMethodOrder
+configures the order/sort algorithm for the test methods.
+
+TestMethodOrder can order by following types
+DisplayName
+MethodName
+Random 
+OrderAnnotation(sort test methods numerically base on @Order annotation, 
+order with the lowest number has highest priority, negative numbers are allowed, 
+if some methods annotated with Order but some not, 
+then these methods which annotated with Order will run firstly, other methods will run after them.
+if order is duplicated, these test method's order will determined by junit algorithm which is not public.)
+
+alphanumerically 数字字母顺序的 
+
+if you have multiple test classes, you can order the classes.
+Define custom order implementation。
+Configure default order in properties file.
+
 ## lifecycle
 
 @BeforeEach

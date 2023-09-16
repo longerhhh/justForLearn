@@ -11,6 +11,10 @@ import static org.junit.jupiter.api.Assertions.*;
 //@DisplayNameGeneration(DisplayNameGenerator.ReplaceUnderscores.class)
 //@DisplayNameGeneration(DisplayNameGenerator.IndicativeSentences.class)
 @DisplayNameGeneration(DisplayNameGenerator.Simple.class)
+//@TestMethodOrder(MethodOrderer.DisplayName.class)
+//@TestMethodOrder(MethodOrderer.MethodName.class) // default
+//@TestMethodOrder(MethodOrderer.Random.class) // randomly based on method name
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class DemoUtilsTest {
 
     private DemoUtils demoUtils;
@@ -40,15 +44,17 @@ class DemoUtilsTest {
         System.out.println("DemoUtilsTest.tearDownAfterAllTest: One-time clean up after all tests");
     }
 
+    @Order(1)
     @Test
     @DisplayName("test if add method in DemoUtils is running correctly. 😊")
     void testAdd() {
         System.out.println("DemoUtilsTest.testAdd running");
 
-        assertEquals(6, demoUtils.add(2,4), "2+4 must be 6");
-        assertNotEquals(7, demoUtils.add(2,4), "2+4 must not be 8");
+        assertEquals(6, demoUtils.add(2, 4), "2+4 must be 6");
+        assertNotEquals(7, demoUtils.add(2, 4), "2+4 must not be 8");
     }
 
+    @Order(-1)
     @Test
     @DisplayName("test if check null in DemoUtils is running correctly. 😁")
     void testCheckNull() {
@@ -59,6 +65,7 @@ class DemoUtilsTest {
         assertNotNull(demoUtils.checkNull(""), "empty string must not be null");
     }
 
+    @Order(5)
     @Test
     void testSameOrNot() {
         String str = "Luv2Code Academy";
@@ -73,7 +80,7 @@ class DemoUtilsTest {
     @Test
     void testTrue() {
         assertTrue(demoUtils.isGreater(2, 1), "2 is bigger than 1");
-        assertFalse(demoUtils.isGreater(1,2), "1 is not bigger than 2");
+        assertFalse(demoUtils.isGreater(1, 2), "1 is not bigger than 2");
     }
 
     @Test
@@ -100,16 +107,16 @@ class DemoUtilsTest {
     @Test
     void testThrows() {
         assertThrows(IllegalArgumentException.class, () -> demoUtils.throwException(-1), "show throw illegal argument exception");
-        assertDoesNotThrow(()->demoUtils.throwException(0), "should not throw exception");
+        assertDoesNotThrow(() -> demoUtils.throwException(0), "should not throw exception");
     }
 
     @Test
     void testTimeout() {
-        assertTimeout(Duration.ofSeconds(3), ()->demoUtils.checkTimeout());
+        assertTimeout(Duration.ofSeconds(3), () -> demoUtils.checkTimeout());
     }
 
     @Test
     void testTimeoutPreemptively() {
-        assertTimeoutPreemptively(Duration.ofSeconds(3), ()->demoUtils.checkTimeout());
+        assertTimeoutPreemptively(Duration.ofSeconds(3), () -> demoUtils.checkTimeout());
     }
 }
