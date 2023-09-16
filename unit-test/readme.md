@@ -1,5 +1,7 @@
 # junit 测试课程学习
 
+[TOC]
+
 > Base on junit 5
 
 ## Assertions
@@ -37,9 +39,21 @@ assertIterableEquals
 
 assertLinesMatch
 
-### assert that an executable throws an exception of expected type
+### assert that an executable throws an exception of expected type or not
 
 assertThrows
+assertDoesNotThrows
+
+### assert that an executable completes before given timeout is exceeded
+
+assertTimeout  断言一段可执行代码的会在指定时间执行结束
+assertTimeoutPreemptively  断言可执行代码如果超过指定时间会被抢占中止
+
+assertTimeout和assertTimeoutPreemptively断言的差异在于，
+前者会在操作超时后继续执行，并在最终的测试报告中记录操作的超时的时间；
+execution exceeded timeout of 2000 ms by 16 ms, 超过预定的2000ms 16ms
+后者在到达指定时间后立即结束，在最终的报告中只体现出操作超时，但不包含实际执行的耗时。
+execution timed out after 2000 ms
 
 ## lifecycle
 

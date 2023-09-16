@@ -2,6 +2,7 @@ package org.example;
 
 import org.junit.jupiter.api.*;
 
+import java.time.Duration;
 import java.util.List;
 
 import static org.junit.jupiter.api.Assertions.*;
@@ -100,5 +101,15 @@ class DemoUtilsTest {
     void testThrows() {
         assertThrows(IllegalArgumentException.class, () -> demoUtils.throwException(-1), "show throw illegal argument exception");
         assertDoesNotThrow(()->demoUtils.throwException(0), "should not throw exception");
+    }
+
+    @Test
+    void testTimeout() {
+        assertTimeout(Duration.ofSeconds(3), ()->demoUtils.checkTimeout());
+    }
+
+    @Test
+    void testTimeoutPreemptively() {
+        assertTimeoutPreemptively(Duration.ofSeconds(3), ()->demoUtils.checkTimeout());
     }
 }
