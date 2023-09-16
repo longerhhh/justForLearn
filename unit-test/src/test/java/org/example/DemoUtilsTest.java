@@ -72,4 +72,11 @@ class DemoUtilsTest {
         assertTrue(demoUtils.isGreater(2, 1), "2 is bigger than 1");
         assertFalse(demoUtils.isGreater(1,2), "1 is not bigger than 2");
     }
+
+    @Test
+    void testArrayEquals() {
+        String[] arr = {"A", "B", "C"};
+
+        assertArrayEquals(arr, demoUtils.getFirstThreeLettersOfAlphabet(), "array should be the same");
+    }
 }

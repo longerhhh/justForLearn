@@ -25,6 +25,10 @@ assertNotSame
 assertTrue
 assertFalse
 
+### assert array is deeply equals
+
+assertArrayEquals
+
 ## lifecycle
 
 @BeforeEach
