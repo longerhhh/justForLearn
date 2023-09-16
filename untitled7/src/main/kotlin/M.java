@@ -1,10 +1,15 @@
-import org.jetbrains.annotations.NotNull;
-
 import java.util.*;
 import java.util.concurrent.ConcurrentHashMap;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 public class M {
     public static void main(String[] args) {
+
+        java.util.List<A1> l = new ArrayList<A1>();
+        List<AA1> aa = new ArrayList<AA1>();
+//        Comparator.comparingInt()
+//        l = aa;
 //        System.out.println(r());
 //        b();
 //        queue(3);
@@ -22,6 +27,11 @@ public class M {
 //        pkg(new int[]{3,4,7,8,9}, new int[]{4,5,10,11,13}, 17);
 //        all4(3);
         x();
+
+        Stream.of("one", "two", "three", "four").filter(e -> e.length() > 3).peek(e -> System.out.println("Filtered value: " + e)).map(String::toUpperCase).peek(e -> System.out.println("Mapped value: " + e)).collect(Collectors.toList());
+        List<Integer> integers = new ArrayList<>();
+        List<String> strings = new ArrayList<>();
+        integers.stream().anyMatch()
     }
 
     static void x() {
@@ -49,7 +59,7 @@ public class M {
 
     static boolean place(List<Integer> list, int index) {
         for (int i = 0; i < list.size(); i++) {
-            if (Objects.equals(list.get(i), index) ||Math.abs(list.get(i)-index)==Math.abs(index-i)) {
+            if (Objects.equals(list.get(i), index) || Math.abs(list.get(i) - index) == Math.abs(index - i)) {
                 return false;
             }
         }
@@ -59,7 +69,7 @@ public class M {
     public static final void all4(int n) {
         int[] arr = getArr(n);
         LinkedList<Integer> list = new LinkedList<>();
-        int[] columnNumber = new int[n+1];
+        int[] columnNumber = new int[n + 1];
         int i = 1;
         while (i > 0) {
             columnNumber[i]++;
@@ -75,7 +85,7 @@ public class M {
                     columnNumber[i] = 0;
                 }
             } else {
-                i --;
+                i--;
             }
         }
     }
@@ -122,7 +132,7 @@ public class M {
             while (columnNumbers[index] < n && list.contains(columnNumbers[index])) {
                 columnNumbers[index]++;
             }
-            System.out.println("index="+index+" columnNumber="+columnNumbers[index]);
+            System.out.println("index=" + index + " columnNumber=" + columnNumbers[index]);
             if (columnNumbers[index] < n) {
                 list.add(arr[columnNumbers[index]]);
                 if (index == n) {
@@ -141,18 +151,18 @@ public class M {
     public static final void pkg(int[] weights, int[] values, int w) {
         int[][] c = new int[weights.length + 1][w + 1];
         c[0] = new int[w + 1];
-        for (int i = 1; i < weights.length+1; i++) {
+        for (int i = 1; i < weights.length + 1; i++) {
             c[i][0] = 0;
-            for (int j = 1; j < w+1; j++) {
-                if (weights[i-1] <= j) {
+            for (int j = 1; j < w + 1; j++) {
+                if (weights[i - 1] <= j) {
                     int t = values[i - 1] + c[i - 1][j - weights[i - 1]];
-                    if (t > c[i-1][j]) {
+                    if (t > c[i - 1][j]) {
                         c[i][j] = t;
                     } else {
-                        c[i][j] = c[i-1][j];
+                        c[i][j] = c[i - 1][j];
                     }
                 } else {
-                    c[i][j] = c[i-1][j];
+                    c[i][j] = c[i - 1][j];
                 }
             }
         }
@@ -168,7 +178,7 @@ public class M {
     private static int[] getArr(int n) {
         int[] arr = new int[n];
         for (int i = 0; i < n; i++) {
-            arr[i] = i+1;
+            arr[i] = i + 1;
         }
         return arr;
     }
@@ -212,13 +222,13 @@ public class M {
                 }
             } else {
                 selected[arr[index]] = false;
-                index --;
+                index--;
             }
         }
     }
 
     public static final void queue(int n) {
-        int[] columnNumber = new int[n+1];
+        int[] columnNumber = new int[n + 1];
         int i = 1;
         while (i > 0) {
             columnNumber[i]++;
@@ -234,7 +244,7 @@ public class M {
                     columnNumber[i] = 0;
                 }
             } else {
-                i --;
+                i--;
             }
         }
     }

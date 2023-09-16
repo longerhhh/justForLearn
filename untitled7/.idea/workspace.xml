@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d717854-219d-4d53-9797-e89500c4be02" name="变更" comment="最长公共前缀">
-      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/X.java" afterDir="false" />
+    <list default="true" id="1d717854-219d-4d53-9797-e89500c4be02" name="变更" comment="四数之和，以及三数之和添加剪枝操作">
+      <change afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/Y.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/kotlin/com/example/V.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/com/example/V.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/D.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/D.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/M.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/M.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -68,48 +69,16 @@
     &quot;show.migrate.to.gradle.popup&quot;: &quot;false&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.X">
-    <configuration name="T" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.T" />
+  <component name="RunManager" selected="Application.M">
+    <configuration name="M" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="M" />
       <module name="untitled7" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="U" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.U" />
-      <module name="untitled7" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <configuration name="V" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.V" />
-      <module name="untitled7" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="W" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.example.W" />
       <module name="untitled7" />
       <extension name="coverage">
         <pattern>
@@ -134,13 +103,33 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Y" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.Y" />
+      <module name="untitled7" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="DKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="DKt" />
+      <module name="untitled7" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.M" />
+        <item itemvalue="Kotlin.DKt" />
+        <item itemvalue="Application.Y" />
         <item itemvalue="Application.X" />
         <item itemvalue="Application.V" />
-        <item itemvalue="Application.W" />
-        <item itemvalue="Application.U" />
-        <item itemvalue="Application.T" />
       </list>
     </recent_temporary>
   </component>
@@ -202,7 +191,14 @@
       <option name="project" value="LOCAL" />
       <updated>1682903251487</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="四数之和，以及三数之和添加剪枝操作">
+      <created>1683180319120</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1683180319120</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,7 +225,8 @@
     <MESSAGE value="整数转罗马数字" />
     <MESSAGE value="罗马数字转整数" />
     <MESSAGE value="最长公共前缀" />
-    <option name="LAST_COMMIT_MESSAGE" value="最长公共前缀" />
+    <MESSAGE value="四数之和，以及三数之和添加剪枝操作" />
+    <option name="LAST_COMMIT_MESSAGE" value="四数之和，以及三数之和添加剪枝操作" />
     <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
@@ -258,7 +255,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/kotlin/M.java</url>
-          <line>158</line>
+          <line>168</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
