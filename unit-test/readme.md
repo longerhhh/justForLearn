@@ -37,6 +37,10 @@ assertIterableEquals
 
 assertLinesMatch
 
+### assert that an executable throws an exception of expected type
+
+assertThrows
+
 ## lifecycle
 
 @BeforeEach

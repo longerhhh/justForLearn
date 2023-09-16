@@ -93,6 +93,12 @@ class DemoUtilsTest {
     void testLinesMatch() {
         List<String> list = List.of("luv", "2", "code");
 
-        assertLinesMatch(list, demoUtils.getAcademyInList(), "expected list should be the same as actual list");
+        assertLinesMatch(list, demoUtils.getAcademyInList(), "lines should match");
+    }
+
+    @Test
+    void testThrows() {
+        assertThrows(IllegalArgumentException.class, () -> demoUtils.throwException(-1), "show throw illegal argument exception");
+        assertDoesNotThrow(()->demoUtils.throwException(0), "should not throw exception");
     }
 }
