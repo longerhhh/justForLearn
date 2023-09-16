@@ -2,6 +2,8 @@ package org.example;
 
 import org.junit.jupiter.api.*;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 //@DisplayNameGeneration(DisplayNameGenerator.Standard.class)
@@ -78,5 +80,12 @@ class DemoUtilsTest {
         String[] arr = {"A", "B", "C"};
 
         assertArrayEquals(arr, demoUtils.getFirstThreeLettersOfAlphabet(), "array should be the same");
+    }
+
+    @Test
+    void testIterableEquals() {
+        List<String> list = List.of("luv", "2", "code");
+
+        assertIterableEquals(list, demoUtils.getAcademyInList(), "expected list should be the same as actual list");
     }
 }

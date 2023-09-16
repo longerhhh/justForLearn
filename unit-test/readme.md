@@ -29,6 +29,10 @@ assertFalse
 
 assertArrayEquals
 
+### assert object iterables are deeply equals
+
+assertIterableEquals
+
 ## lifecycle
 
 @BeforeEach
