@@ -33,6 +33,10 @@ assertArrayEquals
 
 assertIterableEquals
 
+### assert both lists of strings match
+
+assertLinesMatch
+
 ## lifecycle
 
 @BeforeEach

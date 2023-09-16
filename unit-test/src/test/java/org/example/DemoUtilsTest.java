@@ -88,4 +88,11 @@ class DemoUtilsTest {
 
         assertIterableEquals(list, demoUtils.getAcademyInList(), "expected list should be the same as actual list");
     }
+
+    @Test
+    void testLinesMatch() {
+        List<String> list = List.of("luv", "2", "code");
+
+        assertLinesMatch(list, demoUtils.getAcademyInList(), "expected list should be the same as actual list");
+    }
 }
