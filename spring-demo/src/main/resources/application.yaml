@@ -1,0 +1,5 @@
+server:
+  # port访问的端口
+  port: 8888
+  servlet:
+    context-path: /
