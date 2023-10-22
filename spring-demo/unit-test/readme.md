@@ -65,7 +65,7 @@ DisplayName
 MethodName
 Random 
 OrderAnnotation(sort test methods numerically base on @Order annotation, 
-order with the lowest number has highest priority, negative numbers are allowed, 
+order with the lowest number has the highest priority, negative numbers are allowed, 
 if some methods annotated with Order but some not, 
 then these methods which annotated with Order will run firstly, other methods will run after them.
 if order is duplicated, these test method's order will determined by junit algorithm which is not public.)
@@ -109,7 +109,7 @@ graph LR
 @DisplayName
 Custom display name with spaces, special characters and emojis. 
 Useful for test reports in IDE or external test runner
-and also for sharing reports with project management and non techies.
+and also for sharing reports with project management and non-techies.
 
 > note: this annotation will also change the test method name which shown in IDEA left panel. 
 
@@ -323,3 +323,43 @@ add this in pom:
 
 generate path: target/site/jacoco/index.xml
 
+## conditional test
+
+some test may run in some condition like running in some java version(like java11 or java17) of running on some os system(like macOS or linux).
+
+> note: The test annotated with these will show in test results as an ignored test if they are not be executed.
+
+@Disable
+disable some tests.
+this can be used on class or method.
+annotate this means that these tests may have some issues or problems that need to be resolved.
+So don't Run this test until we resolve these issues.
+
+@EnableOnOs
+enable on some os. like OS.Windows, OS.MAC, OS.LINUX. 
+this can be used on class or method.
+we can use it like @EnableOnOs(OS.MAC) or @EnableOnOs({OS.MAC, OS.LINUX})
+
+@EnabledOnJre
+usage: @EnabledOnJre(JRE.JAVA_17)
+
+@EnabledForJreRange
+usage: @EnabledForJreRange(min=JRE.JAVA_11, max=JRE.JAVA_17)
+
+@EnabledIfSystemProperty
+enable test based on system property
+Enable test if system property matches。 We can match system properties using regular expression。 
+
+How to say system properties？ 
+we can set -ea -D<PropertyName>=<PropertyValue> for java
+
+![img.png](img.png)
+
+@EnabledIfEnvironmentVariable
+Enable test based on environment variable。 
+Enable test if environment variable matches. We can match environment variable using regular expression.
+
+How to set environmental variables?
+we can set <name>=<value> for Environment variables.
+
+![img_1.png](img_1.png)

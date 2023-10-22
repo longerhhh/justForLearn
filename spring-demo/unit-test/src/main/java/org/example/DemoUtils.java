@@ -10,9 +10,9 @@ public class DemoUtils {
     private List<String> academyInList = List.of("luv", "2", "code");
 
     public List<String> getAcademyInList() {
+        // Get the list of academy names
         return academyInList;
     }
-
     public String getAcademy() {
         return academy;
     }
@@ -60,4 +60,15 @@ public class DemoUtils {
         System.out.println("Sleeping over");
     }
 
+    public void checkTimeoutWithoutException() throws InterruptedException {
+        System.out.println("I am going to sleep");
+        Thread.sleep(2000);
+        System.out.println("Sleeping over");
+    }
+
+    public void checkTimeoutWithException() throws InterruptedException {
+        System.out.println("I am going to sleep");
+        Thread.sleep(2000);
+        System.out.println("Sleeping over");
+    }
 }
